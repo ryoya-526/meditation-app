@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>瞑想サポート</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <h1>瞑想導入サポート</h1>
+        <p>時間を選択してスタート</p>
+        <div class="controls">
+            <select id="timeSelect">
+                <option value="300">5分</option>
+                <option value="600">10分</option>
+                <option value="900">15分</option>
+            </select>
+            <button onclick="startMeditation()">スタート</button>
+            <button onclick="resetMeditation()">リセット</button>
+        </div>
+        <div class="text-container">
+            <p id="text">準備してください</p>
+            <p id="timer">00:00</p>
+        </div>
+        <div class="css-circle-wrap">
+            <div id="meditationUI" class="circle-container"></div>
+        </div>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </body>
+</html>

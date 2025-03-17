@@ -1,0 +1,50 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: rgb(74, 92, 215);
+    margin: 20px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center; 
+}
+
+button, select {
+    padding: 12px 24px;
+    font-size: 18px;
+    border: 2px solid rgb(74, 92, 215);
+    background-color: white;
+    color: rgb(74, 92, 215);
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 5px;
+    width: 180px;
+    height: 50px;
+}
+
+button:hover {
+    background-color: rgb(74, 92, 215);
+    color: white;
+}
+
+.circle-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    width: 150px;
+    height: 150px;
+    background-color: rgb(74, 92, 215);
+    border-radius: 50%;
+    transition: transform 4s ease-in-out;
+}
+
+#breathTimer {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
